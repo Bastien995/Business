@@ -71,13 +71,13 @@ ul li a{
     color: white;
 }
 .padding{
-    padding: 3rem;
+    padding:0 3rem;
     background-image: url("../img/richard-horvath-_nWaeTF6qo0-unsplash.jpg");
     background-size: cover;
     height: 100vh;
 }
 .section-bg{
-    padding: 3rem;
+    padding:0 3rem;
     background-image: url("../img/richard-horvath-_nWaeTF6qo0-unsplash.jpg");
     background-size: cover;
     background-attachment: fixed;
