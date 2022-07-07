@@ -77,7 +77,7 @@ ul li a{
     height: 100vh;
 }
 .section-bg{
-    padding:0 3rem;
+    *padding:0 3rem;
     background-image: url("../img/richard-horvath-_nWaeTF6qo0-unsplash.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -455,7 +455,7 @@ form {
   }
     nav {
       width: 100%;
-      padding: 70px 0 15px;
+      padding: 0 0 15px;
     }
     nav ul {
       display: none;
