@@ -12,8 +12,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,400&display=swap');
     </style>
-    <section class="section-bg" style="height:100vh ;">
-        <header>
+    <section class="section-bg">
+        <header style="height:100vh ;">
             <nav class="centrer">
                 <div class="container position-relative*">
                     <div class="navigation">
@@ -48,7 +48,10 @@
                                 <a href="#!">Contact</a>
                               </li>
                               <li>
-                                <a href="#!">S'inscrire</a>
+                                <a href="Connexion.html">Se connecter</a>
+                              </li>
+                              <li>
+                                <a href="#" onclick="toggle();">S'inscrire</a>
                               </li>
                             </ul>
                           </nav>
@@ -58,8 +61,10 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <h1 class="header-h1-style">Souhaitez-vous travailler à l'International depuis le Gabon?</h1>
-                            <p class="header-p-style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis provident at repellendus necessitatibus tempora pariatur consequatur quam alias molestias nam, neque earum tempore quia corporis laborum nostrum fugit similique velit.</p>
-                            <a href="#" class="btn bouton">S'inscrire</a>
+                            <p class="header-p-style">Vous pouvez désormais vous construire et transformer vos vies en travaillant pour l’étranger tout en restant au Gabon. C’est simple il suffit de vous former.
+                                Inscrivez vous
+                                </p>
+                            <a href="#" class="btn bouton" onclick="toggle()";>S'inscrire</a>
                         </div>
                         <div class="col-lg-5">
                             <div>
@@ -76,13 +81,18 @@
                 
             </nav>
         </header>
-    </section>
+    
     <section class="section-bg">
         <div class="container">
             <div class="row glass align-items-center">
                 <div class="col-lg-5">
-                    <h2 class="section-h2">La silicon Valley viens à vous.</h2>
-                    <p>Parler des chiffres en rapport avec le taux de chomage au Gabon en abordant egelement les pourcentage de reussite au BAC. Ensuite presenter la silicone valley ainsi que les avantages que la formation pourrait offrir. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptate culpa dolor atque ipsum, natus cupiditate doloribus at enim error vitae vero facilis tenetur aliquid asperiores sint, porro inventore neque?</p>
+                    <h2 class="section-h2">La Silicon Valley viens à vous.</h2>
+                    <p>C’est un peu plus de 36% de la population gabonaise qui est au chômage (Source OIT). Ce qui fait de lui l’un des pays avec le plus grand taux de chômage en Afrique. C’est une situation que nous avons voulu pallier en offrant aux gabonais des opportunités d’emploi pas comme les autres.
+                        En effet, c’est 82% des grandes entreprises mondiales/ de la silicon qui cherchent des personnes qualifiées et disponibles pour résoudre leurs besoins ce qui à présent ne semble pas comblé. 
+                        Ces entreprises sans faire de distinctions de provenance cherchent essentiellement de la main d’œuvre qualifiée et abordable. Ce qui fait de l’Afrique un potentiel, un hub numérique pour répondre à cette demande des plus grandes entreprises qui devient de plus en plus grande.
+                        Mais comment répondre à ces demandes ?
+                        C’est en se formant à leur standard.
+                        </p>
                 </div>
                 <div class="col-lg-7">
                     <img src="img/silicon valley.jpg" alt="" class="img-fluid" style="border-radius:40px;">
@@ -98,61 +108,82 @@
                     <h2 class="section-h2">
                         Acquerir des competences professionnelle afin se ve vendre sur le marché International.
                     </h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus libero sint quia quod, tenetur quidem consequuntur ex repellendus beatae incidunt animi illo nulla vel porro inventore eum iusto eos voluptatum.</p>
-                    <a href="#" class="btn bouton">S'inscrire</a>
+                    <p>Se former c’est créer des opportunités futures.
+                        Même si la demande extérieure est grandissante, elle reste tout de même difficile à satisfaire sans les compétences recherchées.
+                        C’est dans cette optique que l’école 241 business ainsi que ses partenaires internationaux s’allient pour apporter ses standards mondiaux dans ses formations. Nous vous rendons aptes et disponibles pour le marché international après un passage par nos formations.
+                        </p>
                 </div>
             </div>
+        </div>
+        <div class="trailer">
+            <span class="close" onclick="toggle();">&#10006;</span>
+            <div class="container-form d-flex justify-content-center">
+                    <form action="" style="width: 400px;">
+                        <label for="nom">Nom:</label><br>
+                        <input type="text" id="Nom" placeholder="Votre nom" required style="width:300px"><br>
+                        <label for="prenom">Prenom:</label><br>
+                        <input type="text" id="prenom" placeholder="Votre prenom" required style="width:300px"><br>
+                        <label for="nom">Email:</label><br>
+                        <input type="email" id="email" placeholder="Votre email" required style="width:300px"><br>
+                        <label for="password">Mot de passe</label><br>
+                        <input type="password" name="password" id="password" placeholder="Mot de passe" style="width:300px"><br>
+                        <input type="submit" style="width: 200px;">
+                    </form>
+                </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="card glass">
+                    <div class="card cardglass">
                         <div class="card-img"></div>
                         <div class="card-body">
                             <div class="card-title">
-                                <h3>Lorem Ipsum</h3> 
+                                <h3><strong>Acquérir des compétences pratiques et durables:</strong></h3> 
                             </div>
                             <div class="card-paragraph">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit odio blanditiis vel rem enim veniam autem facere, ut libero quam dolor minus, incidunt, voluptatem corrupti explicabo mollitia voluptate consequuntur!</p>
+                                <p>A l’école 241, vous ne devenez pas seulement des personnes savantes mais des personnes qualifiées capables de résoudre des problématiques des entreprises qui feront appel à vous.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card glass">
+                    <div class="card cardglass">
                         <div class="card-img"></div>
                         <div class="card-body">
                             <div class="card-title">
-                                <h3>Lorem Ipsum</h3> 
+                                <h3><strong>Visible sur le marché international</strong></h3> 
                             </div>
                             <div class="card-paragraph">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit odio blanditiis vel rem enim veniam autem facere, ut libero quam dolor minus, incidunt, voluptatem corrupti explicabo mollitia voluptate consequuntur!</p>
+                                <p>On reconnaît une personne à sa valeur. Nous veillons à ce que ce soit vos compétences qui parlent pour vous. Ces formations feront de vous des personnes aptes à postuler pour n’importe quelle structure mais aussi des personnes qui à cause de leurs compétences font parler d’elles.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card glass">
+                    <div class="card cardglass">
                         <div class="card-img"></div>
                         <div class="card-body">
                             <div class="card-title">
-                                <h3>Lorem Ipsum</h3> 
+                                <h3><strong>Vous donner l’opportunité de vous changer</strong></h3> 
                             </div>
                             <div class="card-paragraph">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit odio blanditiis vel rem enim veniam autem facere, ut libero quam dolor minus, incidunt, voluptatem corrupti explicabo mollitia voluptate consequuntur!</p>
+                                <p>L’une des plus grandes compétences que nous offrons à l’école 241; c’est la capacité d’apprendre à apprendre. Nous faisons de vous des réceptacles du savoir; des personnes toujours à la pointe des nouveautés mais surtout des personnes capables d’assimiler et de répliquer sur n’importe quel sujet lié à votre domaine de formation.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card glass">
+                    <div class="card cardglass">
                         <div class="card-img"></div>
                         <div class="card-body">
                             <div class="card-title">
-                                <h3>Lorem Ipsum</h3> 
+                                <h3><strong>Si vous souhaitez vous reconvertir</strong></h3> 
                             </div>
                             <div class="card-paragraph">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit odio blanditiis vel rem enim veniam autem facere, ut libero quam dolor minus, incidunt, voluptatem corrupti explicabo mollitia voluptate consequuntur!</p>
+                                <p>Si la possibilité d’une reconversion a souvent été minimisée en Afrique, grâce à nos formations, vous avez la possibilité de changer de carrière pour le numérique même avec un background complètement différent. 
+                                    La possibilité de vous voir vous reconstruire c’est ce qui nous motive avant toute chose. Et c’est cette occasion que nous vous offrons durant nos formations.
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -165,8 +196,8 @@
                     <img src="img/business-3d-stack-of-different-books.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-6">
-                    <h3 class="baniere-texte fw-bold">Propulsez votre carriere, Obtenez une certification et developpez vos connaissances.</h3>
-                    <a href="#" class="btn bouton">Je me forme</a>
+                    <h3 class="baniere-texte fw-bold">Prêt à  propulser votre carrière? Formez vous et obtenez une certification internationale.</h3>
+                    <a href="#" class="btn bouton" onclick="toggle()">Je me forme</a>
                 </div>
             </div>
         </div>
@@ -177,12 +208,71 @@
                 </div>
                 <div class="col-lg-6 glass">
                     <p>Notre vision</p>
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consequatur dicta provident, alias quod expedita. Distinctio rerum repellendus, nemo incidunt fuga odit vero. Voluptates eum neque beatae, doloribus officia perspiciatis!</h2>
+                    <h2>Désireux de voir une jeunesse qui se prend en main pour assurer son avenir; nous avons voulu mettre à la disposition de ses jeunes un environnement où ils pourront se former et être des valeurs ajoutées tant au niveau national qu’international. 
+                        Notre objectif est de créer un environnement numérique 100% africain où ces même africains seront ceux qui…
+                        </h2>
                     <a href="#" class="btn bouton">En savoir plus</a>
                 </div>
             </div>
         </div>
         <div class="container mt-5 mb-5">
+            <h1 class="text-center fw-bold mb-5 section-title">Nos formations</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="cardglass card">
+                        <div class="card-img">
+                            <img src="img/ingenieur logiciel.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                Ingenieur Logiciel
+                            </h2>
+                            <hr>
+                            <p><strong>Durée:</strong> 12 mois</p>
+                            <p><strong>inscription:</strong> 50,000fcfa</p>
+                            <p><strong>Frais de formation:</strong> 1,200,000fcfa</p>
+                            <a href="#" class="btn bouton" onclick="toggle()">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="cardglass card">
+                        <div class="card-img">
+                            <img src="img/Dev fullstack.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                Developpeur Full Stack
+                            </h2>
+                            <hr>
+                            <p><strong>Durée:</strong> 12 mois</p>
+                            <p><strong>inscription:</strong> 50,000fcfa</p>
+                            <p><strong>Frais de formation:</strong> 1,200,000fcfa</p>
+                            <a href="#" class="btn bouton" onclick="toggle()">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="cardglass card">
+                        <div class="card-img">
+                            <img src="img/emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                Ingenieur Cloud Google
+                            </h2>
+                            <hr>
+                            <p><strong>Durée:</strong> 12 mois</p>
+                            <p><strong>inscription:</strong> 50,000fcfa</p>
+                            <p><strong>Frais de formation:</strong> 1,200,000fcfa</p>
+                            <a href="#" class="btn bouton" onclick="toggle()">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       <!-- <div class="container mt-5 mb-5">
             <h1 class="text-center fw-bold mb-5 section-title">Nos tarifs</h1>
             <div class="row justify-content-center">
                 <div class="col-lg-4">
@@ -212,7 +302,7 @@
                             </div>
                             <hr>
                             <div class="card-paragraph">
-                                <p>Debut: JJ/MM/AA</p>
+                                <p>Debut: Septembre 2022</p>
                                 <p>Durée: 12 mois</p>
                                 <hr>
                                 <h3>Montant:</h3>
@@ -224,34 +314,34 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container mt-5 mb-5">
+        </div>-->
+        <div class="container mt-5 ">
             <h1 class="text-center fw-bold mb-5 section-title">Nos partenaires</h1>
             <div class="row justify-content-center">
                 <div class="col-lg-3">
                     <div class="card glass">
-                        <div class="card-img">
+                        <div class="card-img" style="background-color: white;border-radius:15px;padding:1rem">
                             <img src="img/Ogooue-Labs-1-1024x421.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="card glass">
-                        <div class="card-img">
+                        <div class="card-img" style="background-color: white;border-radius:15px;padding:1rem">
                             <img src="img/Qwasar-Logo-07.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="card glass">
-                        <div class="card-img">
+                        <div class="card-img" style="background-color: white;border-radius:15px;padding:1.15rem 1rem">
                             <img src="img/jfnlogo.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="card glass">
-                        <div class="card-img">
+                        <div class="card-img" style="background-color: white;border-radius:15px;">
                             <img src="img/kisspng-google-logo-googleplex-google-search-5b2cd7fd2d3570.5263877415296655331852-removebg-preview.png" alt="" class="img-fluid">
                         </div>
                     </div>
@@ -259,7 +349,7 @@
             </div>
         </div>
 
-        <div class="container d-flex justify-content-center">
+      <!-- <div class="container d-flex justify-content-center">
             <div class="container-form mt-5 mb-5">
                 <h1 class="text-center fw-bold section-title">Formulaire d'inscription</h1>
                     <form action="">
@@ -305,8 +395,9 @@
                       <div class="drop drop-5"></div>
                     </div>
                 </div>
-        </div>
+        </div>-->
     </section>
+</section>
     <footer>
         <div class="container-fluid p-5">
             <div class="row">
@@ -331,6 +422,21 @@
             </div>
         </div>
     </footer>
+    <script>
+        function toggle(){
+          var trailer = document.querySelector(".trailer")
+          trailer.classList.toggle("active");
+      }
+    </script>
+    <script src="js/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll('.card'),{
+            max:25,
+            speed:400,
+            glare:true,
+            "max-glare":0.5,
+        })
+    </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script>
             (function($) { // Begin jQuery
