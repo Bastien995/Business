@@ -32,7 +32,7 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter:blur(5px);
-    color: white;
+    color:white;
     height: 80%;
     display: flex;
     align-items: center;
@@ -48,7 +48,7 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter:blur(5px);
-  color: white;
+  color:white;
   *height: 80%;
   display: flex;
   align-items: center;
@@ -68,7 +68,7 @@ nav ul li{
 }
 ul li a{
     text-decoration: none;
-    color: white;
+    color:white;
 }
 .padding{
     padding:0 3rem;
@@ -83,10 +83,11 @@ ul li a{
     background-attachment: fixed;
 }
 .bouton{
-    background-color: deepskyblue;
+    background-color: rgb(15, 32, 109);
     border-radius: 50px;
     padding: .5rem 1rem;
     font-weight: bold;
+    color: #fff;
 }
 .globe-img{
     position: absolute;
@@ -141,7 +142,7 @@ ul li a{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter:blur(5px);
-    color: white;
+    color:white;
     border-left: 1px solid rgba(255,255,255,0.3);
     border-top: 1px solid rgba(255,255,255,0.3);
     margin:1rem 0;
@@ -153,7 +154,7 @@ ul li a{
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter:blur(5px);
-  color: white;
+  color:white;
   border-left: 1px solid rgba(255,255,255,0.3);
   border-top: 1px solid rgba(255,255,255,0.3);
   margin: 1rem 0;
@@ -165,7 +166,7 @@ ul li a{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter:blur(5px);
-    color: white;
+    color:white;
     border-left: 1px solid rgba(255,255,255,0.3);
     border-top: 1px solid rgba(255,255,255,0.3);
 }
@@ -176,9 +177,20 @@ ul li a{
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter:blur(5px);
-  color: white;
+  color:white;
   border-left: 1px solid rgba(255,255,255,0.3);
   border-top: 1px solid rgba(255,255,255,0.3);
+}
+.glass4{
+  background-color: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+  color:white;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 1rem;
+  height: max-content;
 }
 .position{
   position: absolute;
@@ -200,7 +212,7 @@ ul li a{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter:blur(5px);
-    color:white;
+    color:black;
 }
 .conteneur{
     width: 100%;
@@ -305,7 +317,7 @@ form {
       outline: none;
   }
   footer{
-    background-color: black;
+    background-color:black;
     color: #ffffff;
   }
   footer a{
@@ -313,7 +325,7 @@ form {
     color: skyblue;
   }
   .section-title{
-    color: white;
+    color:white;
   }
   .display-none{
     display: none;
@@ -378,6 +390,10 @@ form {
     float: left;
     text-transform: uppercase;
     font-size: 1.4em;
+    background-color: #fff;
+    border-radius: 20px;
+
+
   }
   .brand a,
   .brand a:visited {
@@ -414,12 +430,30 @@ form {
   }
   nav ul li a:hover,
   nav ul li a:visited:hover {
-    background: #2581DC;
+    background: rgb(15, 32, 109);
+    color: #ffffff;
+    border-radius: 50px;
+  }
+  nav ul li ul li a,
+  nav ul li ul li a:visited {
+    display: block;
+    padding: .5rem 1rem;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  nav ul li ul li a:hover,
+  nav ul li ul li a:visited:hover {
+    background: rgb(15, 32, 109);
     color: #ffffff;
     border-radius: 50px;
   }
   nav ul li a:not(:only-child):after,
   nav ul li a:visited:not(:only-child):after {
+    padding-left: 4px;
+    content: " ▾";
+  }
+  nav ul li ul li a:not(:only-child):after,
+  nav ul li ul li a:visited:not(:only-child):after {
     padding-left: 4px;
     content: " ▾";
   }
@@ -430,9 +464,27 @@ form {
     padding: 15px;
     line-height: 20px;
   }
-  
+  nav ul li ul li ul li{
+    min-width: 190px;
+  }
+  nav ul li ul li ul li a{
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li{
+    float: right;
+    position: relative;
+    margin-bottom: .75rem;
+  }
   .nav-dropdown {
     position: absolute;
+    display: none;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.845);
+    border-radius: 10px;
+  }
+  .nav-dropdown-list {
+    position: relative;
     display: none;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.845);
@@ -652,3 +704,14 @@ form {
     color: #fff;
     font-size: 2rem;
 }
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  }

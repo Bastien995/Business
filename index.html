@@ -12,46 +12,54 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,400&display=swap');
     </style>
-    <section class="section-bg">
+    <section class="section-bg position-relative">
         <header style="height:100vh ;">
-            <nav class="centrer">
+            <div class="centrer">
                 <div class="container position-relative*">
                     <div class="navigation">
                         <div class="nav-container glass3">
                           <nav class="navbar position-relative">
                             <div class="nav-mobile "><a id="nav-toggle" href="#!"><span></span></a></div>
                             <div class="brand">
-                                <a href="#!">Logo</a>
+                                <a href="#!"><img src="img/logoecole241.png" alt="" width="100px"></a>
                               </div>
                             <ul class="nav-list">
                               <li>
                                 <a href="index.html">Accueil</a>
                               </li>
                               <li>
-                                <a href="#!">Formations</a>
+                                <a href="#!">Departement</a>
                                 <ul class="nav-dropdown">
                                   <li>
-                                    <a href="Ingenieur_logiciel.html">Ingenieur Logiciel</a>
+                                    <a href="#!">Numerique</a>
+                                        <ul class="nav-dropdown-list">
+                                            <li>
+                                                <a href="Ingenieur_logiciel.html">Ingenieur Logiciel</a>
+                                            </li>
+                                            <li>
+                                                <a href="Ingenieur_Cloud.html">Ingenieur Cloud Google</a>
+                                            </li>
+                                            <li>
+                                                <a href="Ingenieur_FullStack.html">Developpeur Full Stack</a>
+                                            </li>
+                                        </ul>
                                   </li>
                                   <li>
-                                    <a href="#!">Ingenieur Cloud</a>
+                                    <a href="E-commerce.html">E-commerce</a>
+                                  </li>
+                                  <li>
+                                    <a href="Transport.html">Transport</a>
+                                  </li>
+                                  <li>
+                                    <a href="Agritech.html">Agritech</a>
                                   </li>
                                 </ul>
-                              </li>
-                              <li>
-                                <a href="Paiement.html">Paiement</a>
                               </li>
                               <li>
                                 <a href="A_propos.html">A propos</a>
                               </li>
                               <li>
                                 <a href="#!">Contact</a>
-                              </li>
-                              <li>
-                                <a href="Connexion.html">Se connecter</a>
-                              </li>
-                              <li>
-                                <a href="#" onclick="toggle();">S'inscrire</a>
                               </li>
                             </ul>
                           </nav>
@@ -61,10 +69,9 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <h1 class="header-h1-style">Souhaitez-vous travailler à l'International depuis le Gabon?</h1>
-                            <p class="header-p-style">Vous pouvez désormais vous construire et transformer vos vies en travaillant pour l’étranger tout en restant au Gabon. C’est simple il suffit de vous former.
-                                Inscrivez vous
+                            <p class="header-p-style">Vous pouvez désormais vous construire et transformer vos vies en travaillant pour l’étranger tout en restant au Gabon. C’est simple il suffit de vous inscrire afin de vous former.
                                 </p>
-                            <a href="#" class="btn bouton" onclick="toggle()";>S'inscrire</a>
+                            <a href="#formations" class="btn bouton">Voir les formations</a>
                         </div>
                         <div class="col-lg-5">
                             <div>
@@ -78,8 +85,12 @@
                 </div>
                  
                 </div>
-                
-            </nav>
+                <video id="background-video" autoplay loop muted>
+
+                    <source src="img/Earth - 39508.mp4" type="video/mp4">
+                    
+                    </video>
+            </div>
         </header>
     
     <section class="section-bg">
@@ -87,9 +98,8 @@
             <div class="row glass align-items-center">
                 <div class="col-lg-5">
                     <h2 class="section-h2">La Silicon Valley viens à vous.</h2>
-                    <p>C’est un peu plus de 36% de la population gabonaise qui est au chômage (Source OIT). Ce qui fait de lui l’un des pays avec le plus grand taux de chômage en Afrique. C’est une situation que nous avons voulu pallier en offrant aux gabonais des opportunités d’emploi pas comme les autres.
-                        En effet, c’est 82% des grandes entreprises mondiales/ de la silicon qui cherchent des personnes qualifiées et disponibles pour résoudre leurs besoins ce qui à présent ne semble pas comblé. 
-                        Ces entreprises sans faire de distinctions de provenance cherchent essentiellement de la main d’œuvre qualifiée et abordable. Ce qui fait de l’Afrique un potentiel, un hub numérique pour répondre à cette demande des plus grandes entreprises qui devient de plus en plus grande.
+                    <p style="text-align:justify ;">C’est un peu plus de 36% de la population gabonaise qui est au chômage (Source OIT). Ce qui fait de lui l’un des pays avec le plus grand taux de chômage en Afrique. C’est une situation que nous voulons pallier en offrant aux gabonais des opportunités d’emploi pas comme les autres. <br>
+                        En effet, 82% des grandes entreprises mondiales cherchent des personnes qualifiées et disponibles pour repondre à leurs besoins. Ce qui fait de l’Afrique un potentiel, un hub numérique pour répondre à cette demande qui devient de plus en plus grande.
                         Mais comment répondre à ces demandes ?
                         C’est en se formant à leur standard.
                         </p>
@@ -102,20 +112,20 @@
         <div class="container mb-5 mt-5">
             <div class="row align-items-center justify-content-around">
                 <div class="col-lg-4 glass*">
-                    <img src="img/business-3d-businessman-standing-with-one-foot-on-a-growing-pile-of-gold-bars.png" alt="">
+                    <img src="img/business-3d-businessman-standing-with-one-foot-on-a-growing-pile-of-gold-bars.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-6 glass">
                     <h2 class="section-h2">
                         Acquerir des competences professionnelle afin se ve vendre sur le marché International.
                     </h2>
                     <p>Se former c’est créer des opportunités futures.
-                        Même si la demande extérieure est grandissante, elle reste tout de même difficile à satisfaire sans les compétences recherchées.
+                        Même si la demande extérieure est grandissante, elle reste tout de même difficile à satisfaire sans les compétences recherchées. <br>
                         C’est dans cette optique que l’école 241 business ainsi que ses partenaires internationaux s’allient pour apporter ses standards mondiaux dans ses formations. Nous vous rendons aptes et disponibles pour le marché international après un passage par nos formations.
                         </p>
                 </div>
             </div>
         </div>
-        <div class="trailer">
+        <!--<div class="trailer">
             <span class="close" onclick="toggle();">&#10006;</span>
             <div class="container-form d-flex justify-content-center">
                     <form action="" style="width: 400px;">
@@ -130,60 +140,66 @@
                         <input type="submit" style="width: 200px;">
                     </form>
                 </div>
-        </div>
+        </div>-->
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="card cardglass">
-                        <div class="card-img"></div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card cardglass" style="height:95% ;">
+                        <div class="card-img d-flex justify-content-center">
+                            <img src="img/Block_Slab_Stack_x5_0001.png" alt="" class="img-fluid" width="200px">
+                        </div>
                         <div class="card-body">
                             <div class="card-title">
-                                <h3><strong>Acquérir des compétences pratiques et durables:</strong></h3> 
+                                <h3 ><strong>Acquérir des compétences pratiques et durables:</strong></h3> 
                             </div>
                             <div class="card-paragraph">
-                                <p>A l’école 241, vous ne devenez pas seulement des personnes savantes mais des personnes qualifiées capables de résoudre des problématiques des entreprises qui feront appel à vous.</p>
+                                <p >A l’école 241, vous ne devenez pas seulement des personnes savantes mais des personnes qualifiées capables de résoudre les problématiques des entreprises qui feront appel à vous.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="card cardglass">
-                        <div class="card-img"></div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card cardglass" style="height:95% ;">
+                        <div class="card-img d-flex justify-content-center">
+                            <img src="img/Block_8x8x8_Rounded0003.png" alt="" class="img-fluid" width="200px">
+                        </div>
                         <div class="card-body">
                             <div class="card-title">
-                                <h3><strong>Visible sur le marché international</strong></h3> 
+                                <h3><strong>Visibilité sur le marché international</strong></h3> 
                             </div>
                             <div class="card-paragraph">
-                                <p>On reconnaît une personne à sa valeur. Nous veillons à ce que ce soit vos compétences qui parlent pour vous. Ces formations feront de vous des personnes aptes à postuler pour n’importe quelle structure mais aussi des personnes qui à cause de leurs compétences font parler d’elles.</p>
+                                <p>Nous veillons à ce que ce soit vos compétences qui parlent pour vous. Ces formations feront de vous des personnes aptes à postuler pour n’importe quelle structure mais aussi des personnes qui à cause de leurs compétences font parler d’elles.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="card cardglass">
-                        <div class="card-img"></div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card cardglass" style="height:95% ;">
+                        <div class="card-img d-flex justify-content-center">
+                            <img src="img/Block_Frame_Laying0002.png" alt="" class="img-fluid" width="200px">
+                        </div>
                         <div class="card-body">
                             <div class="card-title">
-                                <h3><strong>Vous donner l’opportunité de vous changer</strong></h3> 
+                                <h3><strong>Opportunité de vous changer</strong></h3> 
                             </div>
                             <div class="card-paragraph">
-                                <p>L’une des plus grandes compétences que nous offrons à l’école 241; c’est la capacité d’apprendre à apprendre. Nous faisons de vous des réceptacles du savoir; des personnes toujours à la pointe des nouveautés mais surtout des personnes capables d’assimiler et de répliquer sur n’importe quel sujet lié à votre domaine de formation.
+                                <p>L’une des plus grandes compétences que nous offrons à l’école 241, c’est la capacité d’apprendre à apprendre. Nous faisons de vous des réceptacles du savoir mais surtout des personnes capables d’assimiler et de répliquer sur n’importe quel sujet lié à votre domaine de formation.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="card cardglass">
-                        <div class="card-img"></div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card cardglass" style="height:95% ;">
+                        <div class="card-img d-flex justify-content-center">
+                            <img src="img/Block_Matrix_x2_0002.png" alt="" class="img-fluid" width="200px">
+                        </div>
                         <div class="card-body">
                             <div class="card-title">
-                                <h3><strong>Si vous souhaitez vous reconvertir</strong></h3> 
+                                <h3><strong>Un moyen de reconversion</strong></h3> 
                             </div>
                             <div class="card-paragraph">
-                                <p>Si la possibilité d’une reconversion a souvent été minimisée en Afrique, grâce à nos formations, vous avez la possibilité de changer de carrière pour le numérique même avec un background complètement différent. 
-                                    La possibilité de vous voir vous reconstruire c’est ce qui nous motive avant toute chose. Et c’est cette occasion que nous vous offrons durant nos formations.
-                                    </p>
+                                <p>Si la possibilité d’une reconversion a souvent été minimisée en Afrique, grâce à nos formations, vous avez la possibilité de changer de carrière pour le numérique même avec un background complètement différent. La possibilité de vous voir vous reconstruire c’est ce qui nous motive avant toute chose.</p>
                             </div>
                         </div>
                     </div>
@@ -197,80 +213,135 @@
                 </div>
                 <div class="col-lg-6">
                     <h3 class="baniere-texte fw-bold">Prêt à  propulser votre carrière? Formez vous et obtenez une certification internationale.</h3>
-                    <a href="#" class="btn bouton" onclick="toggle()">Je me forme</a>
+                    <a href="#formations" class="btn bouton" >Je me forme</a>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="img/business-3d-lit-light-bulb.png" alt="">
+                    <img src="img/business-3d-lit-light-bulb.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-6 glass">
                     <p>Notre vision</p>
-                    <h2>Désireux de voir une jeunesse qui se prend en main pour assurer son avenir; nous avons voulu mettre à la disposition de ses jeunes un environnement où ils pourront se former et être des valeurs ajoutées tant au niveau national qu’international. 
-                        Notre objectif est de créer un environnement numérique 100% africain où ces même africains seront ceux qui…
+                    <h2>Désireux de voir une jeunesse qui se prend en main pour assurer son avenir, nous voulons mettre à la disposition de ses jeunes un environnement où ils pourront se former et être des valeurs ajoutées tant au niveau national qu’international. <br>
+                        Notre objectif est de créer un environnement numérique 100% africain...
                         </h2>
-                    <a href="#" class="btn bouton">En savoir plus</a>
+                    <a href="A_propos.html" class="btn bouton">En savoir plus</a>
                 </div>
             </div>
         </div>
-        <div class="container mt-5 mb-5">
+        <div class="container mt-5 mb-5" id="formations">
             <h1 class="text-center fw-bold mb-5 section-title">Nos formations</h1>
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="cardglass card">
+                    <div class="glass4" style="border-top-left-radius: 100px;">
                         <div class="card-img">
-                            <img src="img/ingenieur logiciel.jpg" alt="" class="img-fluid">
+                            <img src="img/ingenieur logiciel.jpg" alt="" class="card-img-top" style="border-top-left-radius:100px ;">
                         </div>
                         <div class="card-body">
                             <h2 class="card-title">
                                 Ingenieur Logiciel
                             </h2>
                             <hr>
-                            <p><strong>Durée:</strong> 12 mois</p>
-                            <p><strong>inscription:</strong> 50,000fcfa</p>
-                            <p><strong>Frais de formation:</strong> 1,200,000fcfa</p>
-                            <a href="#" class="btn bouton" onclick="toggle()">S'inscrire</a>
+                            <p><strong>Durée:</strong> <span style="font-size: 20px;"> 24 mois</span></p>
+                            <p><strong>inscription:</strong><span style="font-size: 20px;"> 65,000fcfa</span></p>
+                            <p><strong>Frais de formation:</strong><span style="font-size: 20px;"> 2,500,000fcfa</span></p>
+                            <a href="#" class="btn bouton">S'inscrire</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="cardglass card">
+                    <div class="glass4">
                         <div class="card-img">
-                            <img src="img/Dev fullstack.jpg" alt="" class="img-fluid">
+                            <img src="img/Dev fullstack.jpg" alt="" class="card-img-top">
                         </div>
                         <div class="card-body">
                             <h2 class="card-title">
                                 Developpeur Full Stack
                             </h2>
                             <hr>
-                            <p><strong>Durée:</strong> 12 mois</p>
-                            <p><strong>inscription:</strong> 50,000fcfa</p>
-                            <p><strong>Frais de formation:</strong> 1,200,000fcfa</p>
-                            <a href="#" class="btn bouton" onclick="toggle()">S'inscrire</a>
+                            <p><strong>Durée:</strong> <span style="font-size: 20px;"> 12 mois</span></p>
+                            <p><strong>inscription:</strong> <span style="font-size: 20px;"> 65,000fcfa</span></p>
+                            <p><strong>Frais de formation:</strong><span style="font-size: 20px;"> 1,200,000fcfa</span></p>
+                            <a href="#" class="btn bouton">S'inscrire</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="cardglass card">
+                    <div class="glass4"  style="border-top-right-radius: 100px;">
                         <div class="card-img">
-                            <img src="img/emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="" class="img-fluid">
+                            <img src="img/brett-jordan-B_j4LJbam5U-unsplash.jpg" alt="" class="card-img-top" style="border-top-right-radius:100px;height: 276px;">
                         </div>
                         <div class="card-body">
                             <h2 class="card-title">
-                                Ingenieur Cloud Google
+                                Ingenieur Cloud
+                            </h2>
+                            <hr>
+                            <p><strong>Durée:</strong><span style="font-size: 20px;"> 6 mois</span></p>
+                            <p><strong>inscription:</strong><span style="font-size: 20px;"> 65,000fcfa</span></p>
+                            <p><strong>Frais de formation:</strong><span style="font-size: 20px;"> 900,000fcfa</span></p>
+                            <a href="#" class="btn bouton">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 mb-5">
+            <h1 class="text-center fw-bold mb-5 section-title">Nous formons également dans ces domaines</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="glass4" style="border-top-left-radius: 100px;">
+                        <div class="card-img">
+                            <img src="img/ingenieur logiciel.jpg" alt="" class="card-img-top" style="border-top-left-radius:100px ;">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                Agritech
                             </h2>
                             <hr>
                             <p><strong>Durée:</strong> 12 mois</p>
                             <p><strong>inscription:</strong> 50,000fcfa</p>
                             <p><strong>Frais de formation:</strong> 1,200,000fcfa</p>
-                            <a href="#" class="btn bouton" onclick="toggle()">S'inscrire</a>
+                            <a href="Agritech.html" class="btn bouton">Voir les formations</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="glass4">
+                        <div class="card-img">
+                            <img src="img/Dev fullstack.jpg" alt="" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                E-commerce
+                            </h2>
+                            <hr>
+                            <p><strong>Durée:</strong> 12 mois</p>
+                            <p><strong>inscription:</strong> 50,000fcfa</p>
+                            <p><strong>Frais de formation:</strong> 1,200,000fcfa</p>
+                            <a href="E-commerce.html" class="btn bouton">Voir les formations</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="glass4"  style="border-top-right-radius: 100px;">
+                        <div class="card-img">
+                            <img src="img/brett-jordan-B_j4LJbam5U-unsplash.jpg" alt="" class="card-img-top" style="border-top-right-radius:100px;height: 276px;">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                Transport
+                            </h2>
+                            <hr>
+                            <p><strong>Durée:</strong> 12 mois</p>
+                            <p><strong>inscription:</strong> 50,000fcfa</p>
+                            <p><strong>Frais de formation:</strong> 1,200,000fcfa</p>
+                            <a href="Transport.html" class="btn bouton">Voir les formations</a>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
        <!-- <div class="container mt-5 mb-5">
             <h1 class="text-center fw-bold mb-5 section-title">Nos tarifs</h1>
@@ -403,7 +474,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <h5>Nos coordonnees</h5>
-                    <p><strong>Tel: </strong>xxxxxxxx</p>
+                    <p><strong>Tel: </strong>077 32 32 11</p>
                     <p><strong>Email: </strong>contact@ecole241.business</p>
                     <p><strong>Adresse: </strong>Ancien SOBRAGA, Libreville, Gabon</p>
                 </div>
@@ -445,13 +516,19 @@
 	  $('nav ul li a:not(:only-child)').click(function(e) {
 		$(this).siblings('.nav-dropdown').toggle();
 		// Close one dropdown when selecting another
-		$('.nav-dropdown').not($(this).siblings()).hide();
+		
+	  });
+      $('nav ul li ul li a:not(:only-child)').click(function(e) {
+		$(this).siblings('.nav-dropdown-list').toggle();
+		// Close one dropdown when selecting another
+		$('.nav-dropdown-list').not($(this).siblings()).hide();
 		e.stopPropagation();
 	  });
 	  // Clicking away from dropdown will remove the dropdown class
-	  $('html').click(function() {
+	  /*$('html').click(function() {
 		$('.nav-dropdown').hide();
-	  });
+        $('.nav-dropdown-list').hide();
+	  });*/
 	  // Toggle open and close nav styles on click
 	  $('#nav-toggle').click(function() {
 		$('nav ul').slideToggle();
