@@ -56,7 +56,9 @@
   top: 9%;
   
 }
-.centrer{
+nav{
+  height: min-content;
+}.centrer{
     display: flex;
     justify-content: center;
     height: 80vh;
@@ -395,7 +397,6 @@ form {
     float: left;
     text-transform: uppercase;
     font-size: 1.4em;
-    background-color: #fff;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -611,6 +612,31 @@ form {
       display: none;
     }
   }
+  @media screen and (max-width:1199px){
+    html{
+      font-size: small;
+    }
+  }
+  @media screen and (max-width:1064px){
+    .baniere h3,.md-h2{
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width:767px) {
+    .md-img{
+      width: 50%;
+    }
+    .md-img1{
+      display: none;
+    }
+  }
+  /*responsive pour les cartes*/
+  @media screen and (min-width:1011px) {
+    .card-body .card-title{
+      font-size: 22px;
+    }
+  }
+  
   #nav-toggle {
     position: absolute;
     left: 18px;
