@@ -122,7 +122,12 @@ ul li a{
   right: 8rem;
   animation: rotate 3s infinite backwards alternate;
 }
-
+.globe-img8{
+  position: absolute;
+  right: 11rem;
+  bottom: 5rem;
+  animation: rotate 3s infinite backwards alternate;
+}
 @keyframes rotate{
     0%{
         transform: translateY(-100px);
@@ -590,9 +595,21 @@ form {
       width: 230px;
       right: 13rem;
     }
+    .globe-img4{
+      width: 350px;
+    }
+    .globe-img8{
+      width: 200px;
+    }
+    .globe-img6{
+      width: 350px;
+    }
+    .globe-img7{
+      width:230px;
+    }
   
   }
-  @media screen and (max-width:997px){
+  @media screen and (max-width:992px){
     .globe-img{
       display: none;
     }
@@ -610,6 +627,15 @@ form {
     }
     .globe-img7{
       display: none;
+    }
+    .globe-img8{
+      display: none;
+    }
+    .display-mobile{
+      display: none;
+    }
+    .mobile-layout{
+      display: block;
     }
   }
   @media screen and (max-width:1199px){
