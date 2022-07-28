@@ -647,6 +647,9 @@ form {
     .baniere h3,.md-h2{
       font-size: 30px;
     }
+    .md-img2{
+      width: 350px;
+    }
   }
   @media screen and (max-width:767px) {
     .md-img{
