@@ -118,7 +118,7 @@ ul li a{
 }
 .globe-img7{
   position: absolute;
-  top: 12rem;
+  top: 15rem;
   right: 8rem;
   animation: rotate 3s infinite backwards alternate;
 }
@@ -606,8 +606,14 @@ form {
     }
     .globe-img7{
       width:230px;
+      right: 6rem;
     }
   
+  }
+  @media screen and (max-width:1199px){
+    .globe-img7{
+      top:18rem;
+    }
   }
   @media screen and (max-width:992px){
     .globe-img{
