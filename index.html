@@ -581,6 +581,15 @@
             glare:true,
             "max-glare":0.5,
         })
+         // Destroy tilt
+if ($(window).width() < 480) {
+  var element = $('.card');
+  element.tilt.destroy.call('.card');
+}else{
+ // Reset tilt
+  $('.card').tilt();
+}
+
     </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script>
