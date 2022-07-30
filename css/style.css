@@ -404,7 +404,7 @@ form {
     line-height: 20px;
   }
   nav ul li ul li{
-    float: right;
+    float: right*;
     position: relative;
     margin-bottom: .75rem;
   }
