@@ -8,7 +8,7 @@ document.getElementById('form')
    btn.value = 'Envoie...';
 
    const serviceID = 'default_service';
-   const templateID = 'template_jpgfgws';
+   const templateID = 'template_qs2jlbm';
    document.getElementById('form').style.display = 'none';
    document.getElementById('imgf').style.display = 'block';
    document.getElementById('pat').innerHTML = 'Veuillez patienter...';

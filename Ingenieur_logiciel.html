@@ -7,62 +7,106 @@
     <title>Bienvenue sur Ecole 241 Business</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="css/aos/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="section-bg">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,400&display=swap');
     </style>
-    <section>
-        <header style="height:100vh;">
+    <div class="over" id="over">
+
+        <!-- ----------------------formulaire---------------------------------------------- -->
+
+        <div class="tout">
+            <img src="./img/giphy.gif" alt="" srcset="" class="img-fluid" id="imgf">
+            <h1 id="pat" style="color: white;"></h1>
+
+            <form action="" method="post" role="form" id="form" style="padding: 30px;">
+                <h6 id="croix">&#9587;</h6>
+
+                <h3>Laissez nous un message</h3>
+                <div class="row">
+                    <div class="form-group">
+                        <input type="text" name="from_name" class="form-control" id="from_name" placeholder="Votre nom"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email_id" id="email_id" placeholder="Votre Email"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required
+                        id="message"></textarea>
+                </div>
+                <!--<div class="my-3">
+                              <div class="loading">Loading</div>
+                              <div class="error-message"></div>
+                              <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>-->
+                <br>
+                <div class="text-center" style="width: 100%;"><button type="submit" class="btn bouton" id="button"
+                        style="width: 100%; border-radius: 8px ;">Envoyer</button></div>
+            </form>
+        </div>
+
+
+    </div>
+
+    <section class="section-bg">
+        <header style="height:100vh ;">
             <div class="centrer">
-                <div class="container position-relative">
-                    <div class="navigation">
+                <div class="container">
+                    <div class="navigation align-items-center">
                         <div class="nav-container glass3">
                             <nav class="navbar d-flex align-items-center">
                                 <div class="nav-mobile "><a id="nav-toggle" href="#!"><span></span></a></div>
                                 <div class="brand">
-                                    <a href="#!"><img src="img/20220728_083028.png" alt="" width="130px"></a>
-                                  </div>
+                                    <a href="#!"><img src="img/20220728_083028.png" alt="" width="140px"></a>
+                                </div>
                                 <ul class="nav-list">
-                                  <li>
-                                    <a href="index.html">Accueil</a>
-                                  </li>
-                                  <li>
-                                    <a href="#!">Département</a>
-                                    <ul class="nav-dropdown">
-                                      <li>
-                                        <a href="#!">Numerique</a>
-                                            <ul class="nav-dropdown-list">
-                                                <li>
-                                                    <a href="Ingenieur_logiciel.html">Ingenieur Logiciel</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Ingenieur_Cloud.html">Ingenieur Cloud Google</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Ingenieur_FullStack.html">Developpeur Full Stack</a>
-                                                </li>
-                                            </ul>
-                                      </li>
-                                      <li>
-                                        <a href="E-commerce.html">E-commerce</a>
-                                      </li>
-                                      <li>
-                                        <a href="Transport.html">Transport</a>
-                                      </li>
-                                      <li>
-                                        <a href="Agritech.html">Agritech</a>
-                                      </li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <a href="A_propos.html">A&nbsp;propos</a>
-                                  </li>
-                                  <li>
-                                    <a href="contact.html">Contact</a>
-                                  </li>
+                                    <li>
+                                        <a href="index.html">Accueil</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Departement</a>
+                                        <ul class="nav-dropdown">
+                                            <li>
+                                                <a href="#!">Numerique</a>
+                                                <ul class="nav-dropdown-list">
+                                                    <li>
+                                                        <a href="Ingenieur_logiciel.html">Ingenieur Logiciel</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="Ingenieur_Cloud.html">Ingenieur Cloud Google</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="Ingenieur_FullStack.html">Developpeur Full Stack</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="E-commerce.html">E-commerce</a>
+                                            </li>
+                                            <li>
+                                                <a href="Transport.html">Transport</a>
+                                            </li>
+                                            <li>
+                                                <a href="Agritech.html">Agritech</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="A_propos.html">A propos</a>
+                                    </li>
+                                    <li id="contact">
+                                        <a href="#">Contact</a>
+                                    </li>
                                 </ul>
-                              </nav>
+                            </nav>
                         </div>
                     </div>
                     <div class="container-fluid d-flex align-items-center" style="height: 70vh;color:white">
@@ -90,11 +134,11 @@
         <div class="container-fluid mb-5">
             <div class="container">
                 <div class="row glass align-items-center position-relative">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-right">
                         <h2 class="section-title section-h2 md-h2">Positionnez vous au rang d'Ingenieur logiciel compétent.</h2>
                         <p class="section-title">L’Ingénieur Logiciel est en charge de la programmation et de la validation d’un module logiciel, il assure egalement son intégration avant livraison et ensuite sa maintenance en condition opérationnelle. <br> Il participe ainsi à l’ensemble du cycle d’un projet informatique, depuis sa définition jusqu’aux phases de maintenance, et travaille au sein d’une équipe, sous la responsabilité d’un chef de projet informatique.</p>
                     </div>
-                    <div class="col-lg-5 display-none mobile-layout d-flex justify-content-center">
+                    <div class="col-lg-5 display-none mobile-layout d-flex justify-content-center" data-aos="fade-left" data-aos-delay="500">
                         <img src="img/world-education-4022884-3328667.webp" alt="" class="md-img2">
                     </div>
                     
@@ -104,7 +148,7 @@
         <div class="container-fluid section-margin">
             <div class="row section-text-color d-flex justify-content-around" >
                 <h3 class="text-center fw-bold">Quelles sont les valeurs ajoutées qui vous seront transmises tout au cours de la formation?</h3>
-                <div class="col-lg-5 col-xl-3 col-md-5 col-sm-5 glass card">
+                <div class="col-lg-5 col-xl-3 col-md-5 col-sm-5 glass card" data-aos="fade-up" data-aos-delay="500">
                     <span class="numero">01</span>
                     <h3>Compétences techniques</h3>
                     <ul>
@@ -115,7 +159,7 @@
                         <li>Bonne maitrise de Git</li>
                     </ul>
                 </div>
-                <div class="col-lg-5 col-xl-3 col-md-5 col-sm-5 glass card">
+                <div class="col-lg-5 col-xl-3 col-md-5 col-sm-5 glass card" data-aos="fade-up" data-aos-delay="1000">
                     <span class="numero">02</span>
                     <h3>Experiences Logicielles</h3>
                     <ul>
@@ -124,7 +168,7 @@
                         <li>Transformation des spécifications techniques <br> en architecture et en base de code.</li>
                     </ul>
                 </div>
-                <div class="col-lg-5 col-xl-3 col-md-5 col-sm-5 glass card">
+                <div class="col-lg-5 col-xl-3 col-md-5 col-sm-5 glass card" data-aos="fade-up" data-aos-delay="1500">
                         <span class="numero">03</span>
                     <h3>Qualités professionnelles.</h3>
                     <ul>
@@ -138,14 +182,14 @@
             </div>
         </div>
         <div class="container d-flex justify-content-center">
-            <div class="row section-text-color glass">
+            <div class="row section-text-color glass" data-aos="fade-up">
                 <h1 class="text-center">Programme de formation</h1>
                 <div class="col-lg">
                     <h6 class="text-center">Formation en ligne à temps plein.</h6>
                     <br>
                     <br>
-                    <p style="font-size:20px"><strong>Durée: </strong><br><span style="font-size:30px;">24mois</span></p>
-                    <p style="font-size:20px"><strong>Frequence des cours:</strong><br><span style="font-size:30px;">Lundi-Vendredi</span></p>
+                    <p style="font-size:20px"><strong>Durée: </strong><br><span style="font-size:30px;">24 mois</span></p>
+                    <p style="font-size:20px"><strong>Fréquence des cours:</strong><br><span style="font-size:30px;">Lundi-Vendredi</span></p>
                     <hr>
                     <p style="font-size:20px"><strong>Inscription:</strong><br><span style="font-size:30px;font-weight: bold;color: rgb(90, 120, 255);">65.000fcfa</span></p>
                     <hr>
@@ -164,7 +208,7 @@
             </div>
         </div>
         <div class="container mt-5">
-            <div class="row justify-content-between glass">
+            <div class="row justify-content-between glass" data-aos="fade-right">
                 <h2 class="text-center">Comment fonctionne l'apprentissage?</h2>
                 <p class="text-center">Ce que vous ferez tout au long du programme.</p>
                 <div class="col-lg-6 col-md-6 col-xl-3">
@@ -242,7 +286,7 @@
                 <div class="row">
                     <h2 class="text-center section-text-color mb-5">Ce qui nous distingue</h2>
                     <div class="col-lg-6 col-md-6 col-xl-3">
-                        <div class="card cardglass" style="height: 95%;">
+                        <div class="card cardglass" style="height: 95%;" data-aos="fade-up" data-aos-delay="500">
                             <div class="d-flex justify-content-center">
                                 <img class="img-fluid" src="img/Block_8x8x8_Rounded0003.png" alt="" width="200px">
                             </div>
@@ -258,7 +302,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-xl-3">
-                        <div class="card cardglass" style="height: 95%;">
+                        <div class="card cardglass" style="height: 95%;" data-aos="fade-up" data-aos-delay="1000">
                             <div class="d-flex justify-content-center">
                                 <img class="img-fluid" src="img/Block_Cage_2_0000.png" alt="" width="200px">
                             </div>
@@ -274,7 +318,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-xl-3">
-                        <div class="card cardglass" style="height: 95%;">
+                        <div class="card cardglass" style="height: 95%;" data-aos="fade-up" data-aos-delay="1500">
                             <div class="d-flex justify-content-center">
                                 <img class="img-fluid" src="img/Block_Cage_3_0000.png" alt="" width="200px">
                             </div>
@@ -290,7 +334,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-xl-3">
-                        <div class="card cardglass" style="height: 95%;">
+                        <div class="card cardglass" style="height: 95%;" data-aos="fade-up" data-aos-delay="2000">
                             <div class="d-flex justify-content-center">
                                 <img class="img-fluid" src="img/Fractal_Cube_4_0000.png" alt="" width="200px">
                             </div>
@@ -313,15 +357,15 @@
                 <div>
                     <h2 class="section-title text-center fw-bold">Les débouchés</h2>
                 </div>
-                <div class="row ">
+                <div class="row " data-aos="fade-right" data-aos-delay="500">
                     <h4 style="color: skyblue;font-weight: bold;">Carrière</h4>
                      <p> L’Ingénieur Logiciel peut évoluer vers des responsabilités de conduite de projet, en devenant Chef de projet informatique et en encadrant une équipe d’Ingénieurs Logiciel, ou bien au contraire capitaliser sur ses connaissances techniques, en devenant Expert dans un domaine particulier ou Consultant spécialisé.</p>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-left" data-aos-delay="1000">
                     <h4 style="color: skyblue;font-weight: bold;">Principaux employeurs</h4>
                     <p>Les principaux employeurs sont les SSII (essentiellement pour les jeunes diplômés fraîchement émoulus de l’école), les sociétés utilisatrices et les éditeurs de logiciels. <br> Certaines des missions proposées par les SSII sont de véritables pré-embauches pour des sociétés d’utilisatrices, pour lesquelles une mission de longue durée (typiquement un an) devient une période d’essai étendue.</p>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-up" data-aos-delay="1500">
                   <h4 style="color: skyblue;font-weight: bold;">Salaire</h4>
                   <ul style="margin-left: 2rem;">
                       <li><strong>Junior :</strong> entre 30 et 35 k€/an (19.500.000fcfa et plus/an)</li>
@@ -359,6 +403,22 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="css/aos/aos.js"></script>
+    <script src="./js/contact.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+
+    <script type="text/javascript">
+        emailjs.init('tMVN8O-dfxJshKIMd')
+    </script>
+    <script src="./js/app.js"></script>
+
     <script src="js/vanilla-tilt.min.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll('.card'),{

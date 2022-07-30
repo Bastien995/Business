@@ -7,62 +7,106 @@
     <title>Bienvenue sur Ecole 241 Business</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="css/aos/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="section-bg">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,400&display=swap');
     </style>
-    <section class="position-relative">
+    <div class="over" id="over">
+
+        <!-- ----------------------formulaire---------------------------------------------- -->
+
+        <div class="tout">
+            <img src="./img/giphy.gif" alt="" srcset="" class="img-fluid" id="imgf">
+            <h1 id="pat" style="color: white;"></h1>
+
+            <form action="" method="post" role="form" id="form" style="padding: 30px;">
+                <h6 id="croix">&#9587;</h6>
+
+                <h3>Laissez nous un message</h3>
+                <div class="row">
+                    <div class="form-group">
+                        <input type="text" name="from_name" class="form-control" id="from_name" placeholder="Votre nom"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email_id" id="email_id" placeholder="Votre Email"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required
+                        id="message"></textarea>
+                </div>
+                <!--<div class="my-3">
+                              <div class="loading">Loading</div>
+                              <div class="error-message"></div>
+                              <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>-->
+                <br>
+                <div class="text-center" style="width: 100%;"><button type="submit" class="btn bouton" id="button"
+                        style="width: 100%; border-radius: 8px ;">Envoyer</button></div>
+            </form>
+        </div>
+
+
+    </div>
+
+    <section class="section-bg">
         <header style="height:100vh ;">
             <div class="centrer">
-                <div class="container position-relative*">
-                    <div class="navigation">
+                <div class="container">
+                    <div class="navigation align-items-center">
                         <div class="nav-container glass3">
-                          <nav class="navbar d-flex align-items-center">
-                            <div class="nav-mobile "><a id="nav-toggle" href="#!"><span></span></a></div>
-                            <div class="brand">
-                                <a href="#!"><img src="img/20220728_083028.png" alt="" width="130px"></a>
-                              </div>
-                            <ul class="nav-list">
-                              <li>
-                                <a href="index.html">Accueil</a>
-                              </li>
-                              <li>
-                                <a href="#!">Département</a>
-                                <ul class="nav-dropdown">
-                                  <li>
-                                    <a href="#!">Numerique</a>
-                                        <ul class="nav-dropdown-list">
+                            <nav class="navbar d-flex align-items-center">
+                                <div class="nav-mobile "><a id="nav-toggle" href="#!"><span></span></a></div>
+                                <div class="brand">
+                                    <a href="#!"><img src="img/20220728_083028.png" alt="" width="140px"></a>
+                                </div>
+                                <ul class="nav-list">
+                                    <li>
+                                        <a href="index.html">Accueil</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Departement</a>
+                                        <ul class="nav-dropdown">
                                             <li>
-                                                <a href="Ingenieur_logiciel.html">Ingenieur Logiciel</a>
+                                                <a href="#!">Numerique</a>
+                                                <ul class="nav-dropdown-list">
+                                                    <li>
+                                                        <a href="Ingenieur_logiciel.html">Ingenieur Logiciel</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="Ingenieur_Cloud.html">Ingenieur Cloud Google</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="Ingenieur_FullStack.html">Developpeur Full Stack</a>
+                                                    </li>
+                                                </ul>
                                             </li>
                                             <li>
-                                                <a href="Ingenieur_Cloud.html">Ingenieur Cloud Google</a>
+                                                <a href="E-commerce.html">E-commerce</a>
                                             </li>
                                             <li>
-                                                <a href="Ingenieur_FullStack.html">Developpeur Full Stack</a>
+                                                <a href="Transport.html">Transport</a>
+                                            </li>
+                                            <li>
+                                                <a href="Agritech.html">Agritech</a>
                                             </li>
                                         </ul>
-                                  </li>
-                                  <li>
-                                    <a href="E-commerce.html">E-commerce</a>
-                                  </li>
-                                  <li>
-                                    <a href="Transport.html">Transport</a>
-                                  </li>
-                                  <li>
-                                    <a href="Agritech.html">Agritech</a>
-                                  </li>
+                                    </li>
+                                    <li>
+                                        <a href="A_propos.html">A propos</a>
+                                    </li>
+                                    <li id="contact">
+                                        <a href="#">Contact</a>
+                                    </li>
                                 </ul>
-                              </li>
-                              <li>
-                                <a href="A_propos.html">A&nbsp;propos</a>
-                              </li>
-                              <li>
-                                <a href="contact.html">Contact</a>
-                              </li>
-                            </ul>
-                          </nav>
+                            </nav>
                         </div>
                     </div>
                 <div class="container-fluid d-flex align-items-center width90*" style="height: 70vh;color:white">

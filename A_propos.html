@@ -7,62 +7,106 @@
     <title>Bienvenue sur Ecole 241 Business</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="css/aos/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="section-bg">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,400&display=swap');
     </style>
-    <section>
-        <header style="height:100vh;">
+    <div class="over" id="over">
+
+        <!-- ----------------------formulaire---------------------------------------------- -->
+
+        <div class="tout">
+            <img src="./img/giphy.gif" alt="" srcset="" class="img-fluid" id="imgf">
+            <h1 id="pat" style="color: white;"></h1>
+
+            <form action="" method="post" role="form" id="form" style="padding: 30px;">
+                <h6 id="croix">&#9587;</h6>
+
+                <h3>Laissez nous un message</h3>
+                <div class="row">
+                    <div class="form-group">
+                        <input type="text" name="from_name" class="form-control" id="from_name" placeholder="Votre nom"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email_id" id="email_id" placeholder="Votre Email"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required
+                        id="message"></textarea>
+                </div>
+                <!--<div class="my-3">
+                              <div class="loading">Loading</div>
+                              <div class="error-message"></div>
+                              <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>-->
+                <br>
+                <div class="text-center" style="width: 100%;"><button type="submit" class="btn bouton" id="button"
+                        style="width: 100%; border-radius: 8px ;">Envoyer</button></div>
+            </form>
+        </div>
+
+
+    </div>
+
+    <section class="section-bg">
+        <header style="height:100vh ;">
             <div class="centrer">
-                <div class="container position-relative">
-                    <div class="navigation">
+                <div class="container">
+                    <div class="navigation align-items-center">
                         <div class="nav-container glass3">
                             <nav class="navbar d-flex align-items-center">
                                 <div class="nav-mobile "><a id="nav-toggle" href="#!"><span></span></a></div>
                                 <div class="brand">
-                                    <a href="#!"><img src="img/20220728_083028.png" alt="" width="130px"></a>
-                                  </div>
+                                    <a href="#!"><img src="img/20220728_083028.png" alt="" width="140px"></a>
+                                </div>
                                 <ul class="nav-list">
-                                  <li>
-                                    <a href="index.html">Accueil</a>
-                                  </li>
-                                  <li>
-                                    <a href="#!">Département</a>
-                                    <ul class="nav-dropdown">
-                                      <li>
-                                        <a href="#!">Numerique</a>
-                                            <ul class="nav-dropdown-list">
-                                                <li>
-                                                    <a href="Ingenieur_logiciel.html">Ingenieur Logiciel</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Ingenieur_Cloud.html">Ingenieur Cloud Google</a>
-                                                </li>
-                                                <li>
-                                                    <a href="Ingenieur_FullStack.html">Developpeur Full Stack</a>
-                                                </li>
-                                            </ul>
-                                      </li>
-                                      <li>
-                                        <a href="E-commerce.html">E-commerce</a>
-                                      </li>
-                                      <li>
-                                        <a href="Transport.html">Transport</a>
-                                      </li>
-                                      <li>
-                                        <a href="Agritech.html">Agritech</a>
-                                      </li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <a href="A_propos.html">A&nbsp;propos</a>
-                                  </li>
-                                  <li>
-                                    <a href="contact.html">Contact</a>
-                                  </li>
+                                    <li>
+                                        <a href="index.html">Accueil</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Departement</a>
+                                        <ul class="nav-dropdown">
+                                            <li>
+                                                <a href="#!">Numerique</a>
+                                                <ul class="nav-dropdown-list">
+                                                    <li>
+                                                        <a href="Ingenieur_logiciel.html">Ingenieur Logiciel</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="Ingenieur_Cloud.html">Ingenieur Cloud Google</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="Ingenieur_FullStack.html">Developpeur Full Stack</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="E-commerce.html">E-commerce</a>
+                                            </li>
+                                            <li>
+                                                <a href="Transport.html">Transport</a>
+                                            </li>
+                                            <li>
+                                                <a href="Agritech.html">Agritech</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="A_propos.html">A propos</a>
+                                    </li>
+                                    <li id="contact">
+                                        <a href="#">Contact</a>
+                                    </li>
                                 </ul>
-                              </nav>
+                            </nav>
                         </div>
                     </div>
                     <div class="container-fluid d-flex align-items-center width90*" style="height: 70vh;color:white">
@@ -90,8 +134,7 @@
                 <div class="row glass d-flex justify-content-around align-items-center section-text-color">
                     <div class="col-lg-5">
                         <h2 class="section-h2">Qui sommes nous?</h2>
-                        <p style="text-align:justify ;">École 241 Business, est une filiale de l’école 241 qui etait exclusivement une école portée sur la formation des entrepreneurs dans le domaine du commerce et l’artisanat par l’entremise du numérique et qui aujourd'hui integre deux nouvelles formations a ces atifs notamment des formations en ligne <strong>d'Ingenieur Cloud Google</strong> et <strong>d'Ingenieur Logiciel</strong>. <br> Sa méthode d’enseignement s’inspire des plus grandes écoles du numérique, qui est la pédagogie inversée : un fonctionnement participatif qui permet aux étudiants de libérer toute leur créativité́ grâce à l’apprentissage par projets. <br>
-                            L’établissement est fondé par Sylvère Boussamba, un Tech-Entrepreneur passionné, pour ajouter de la valeur aux personnes désirants se former et avoir un métier dans le numérique. Pour former en grand nombre les meilleurs talents de demain, l’école 241 met à disposition la meilleure infrastructure dans un lieu unique et moderne.</p>
+                        <p style="text-align:justify ;">École 241 Business est une école portée sur la formation aux metiers innovants et qui aujourd'hui integre de nouvelles formations à ces atifs notamment des formations en ligne <strong>d'Ingenieur Cloud Google</strong>, <strong>d'Ingenieur Logiciel</strong>, <strong>Developpeur Full Stack</strong> et bien d'autres à découvrir. <br> Sa méthode d’enseignement s’inspire des plus grandes écoles du numérique, qui est la pédagogie inversée : un fonctionnement participatif qui permet aux étudiants de libérer toute leur créativité́ grâce à l’apprentissage par projets. <br></p>
                     </div>
                     <div class="col-lg-6 d-flex justify-content-center">
                         <img class="img-fluid" src="img/business-3d-business-advisers-with-a-big-stack-of-coins.png" alt="">
@@ -102,14 +145,14 @@
         </section>
         <section class="section-margin">
             <div class="container">
-                <div class="row glass">
+                <div class="row glass" data-aos="fade-right">
                     <h3 style="font-weight:bold ;">Notre vision.</h3>
                     <div class="col-lg">
                         <h4>Comme pour l’école 241, notre vision n’a pas changé disons plutôt qu’elle s’est accrue. 
                             En effet nous restons fixés sur les objectifs premier qui sont de: <br><br>
                             <ul>
-                                <li>Permettre l'insertion ou l'inclusion sociale grâce aux compétences numériques;</li><br>
-                                <li>Créer des leaders capable d'apporter un changement considérable;</li><br>
+                                <li>Permettre l'insertion ou l'inclusion sociale grâce aux compétences numériques.</li><br>
+                                <li>Créer des leaders capable d'apporter un changement considérable.</li><br>
                                 <li>Bâtir un écosystème entrepreneurial à fort potentiel.</li><br>
                             </ul>
                             En plus de cela, apporter la valeur ajoutée du Gabon sur le plan international grâce au numérique. 
@@ -120,10 +163,10 @@
             </div>
             <div class="container mt-5">
                 <div class="row glass d-flex align-items-center">
-                    <div class="col-lg-5 d-flex justify-content-center">
+                    <div class="col-lg-5 d-flex justify-content-center" data-aos="fade-right">
                         <img src="img/business-3d-target-with-dart-arrow-in-bullseye.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-up">
                     <br>
                     <br>
                         <h3 style="font-weight: bold;">Notre mission.</h3>
@@ -137,7 +180,7 @@
         <section>
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 glass">
+                    <div class="col-lg-6 glass" data-aos="fade-down">
                         <h1>Mr Sylverve BOUSSAMBA</h1>
                         <h4>Fondateur d'Ogooue Labs</h4>
                         <p>La mission d’Ogooué Labs, c’est de construire des innovations sociales ou business, afin de bâtir un écosystème entrepreneurial, dynamique et prospère, qui va rayonner sur tout le continent africain.</p><br>
@@ -148,7 +191,7 @@
                           </ul>
                           <p>À l' École 241, nous vous donnons les codes pour réaliser vos rêves !</p>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-up">
                         <img class="img-fluid" src="img/Coach_Silvere.jpg" alt="" style="border-radius: 20px;">
                     </div>
                 </div>
@@ -157,10 +200,10 @@
         <section class="section-margin">
             <div class="container">
                 <div class="row d-flex align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-up">
                         <img src="img/Signature.jpg" alt="" class="img-fluid" style="border-radius: 20px;">
                     </div>
-                    <div class="col-lg-6 glass">
+                    <div class="col-lg-6 glass" data-aos="fade-down">
                         <h2 class="section-h2"> Cérémonie de signature du partenariat avec JFN IT.</h2>
                         <p>C’est dans la recherche de perfection de notre offre que nous avons décidé de nous rapprocher des meilleurs. Pour ce faire, nous avons signé des partenariats avec divers grands organismes dont JFN IT. <br>
                             En effet, cette collaboration consistera à apporter un aspect international à notre formation mais aussi permettra à chaque apprenant de découvrir les différentes tendances en matière d’emploi et d’apprentissage au niveau de l’international.
@@ -174,7 +217,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-xl-3 col-md-5">
-                        <div class="card cardglass" style="height: 95%;">
+                        <div class="card cardglass" style="height: 95%;" data-aos="flip-up" data-aos-easing="ease-out-cubic">
                             <div class="card-img"></div>
                             <div class="card-body">
                                 <div class="card-title">
@@ -189,7 +232,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5 col-xl-3 col-md-5">
-                        <div class="card cardglass" style="height: 95%;">
+                        <div class="card cardglass" style="height: 95%;" data-aos="flip-left" data-aos-easing="ease-out-cubic">
                             <div class="card-img"></div>
                             <div class="card-body">
                                 <div class="card-title">
@@ -203,7 +246,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5 col-xl-3 col-md-5">
-                        <div class="card cardglass" style="height: 95%;">
+                        <div class="card cardglass" style="height: 95%;" data-aos="flip-left" data-aos-easing="ease-out-cubic">
                             <div class="card-img"></div>
                             <div class="card-body">
                                 <div class="card-title">
@@ -232,29 +275,29 @@
                 <h1 class="text-center fw-bold mb-5 section-title">Nos partenaires</h1>
                 <div class="row justify-content-center">
                     <div class="col-lg-3 col-md-6">
-                        <div class="card glass">
-                            <div class="card-img" style="background-color: white;border-radius:15px;padding:1rem">
+                        <div class="card glass" data-aos="flip-left" data-aos-easing="ease-out-cubic">
+                            <div class="card-img" style="background-color: white;border-radius:15px; padding:1rem">
                                 <img src="img/Ogooue-Labs-1-1024x421.png" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card glass">
-                            <div class="card-img" style="background-color: white;border-radius:15px;padding:1.15rem 1rem">
+                        <div class="card glass" data-aos="flip-left" data-aos-easing="ease-out-cubic">
+                            <div class="card-img" style="background-color: white;border-radius:15px; padding:1.15rem 1rem">
                                 <img src="img/20220728_012439.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card glass">
-                            <div class="card-img" style="background-color: white;border-radius:15px;padding:1rem">
+                        <div class="card glass" data-aos="flip-left" data-aos-easing="ease-out-cubic">
+                            <div class="card-img" style="background-color: white;border-radius:15px; padding:1rem">
                                 <img src="img/Qwasar-Logo-07.png" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
                     
                     <div class="col-lg-3 col-md-6">
-                        <div class="card glass">
+                        <div class="card glass" data-aos="flip-left" data-aos-easing="ease-out-cubic">
                             <div class="card-img" style="background-color: white;border-radius:15px;">
                                 <img src="img/kisspng-google-logo-googleplex-google-search-5b2cd7fd2d3570.5263877415296655331852-removebg-preview.png" alt="" class="img-fluid">
                             </div>
@@ -292,6 +335,22 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="css/aos/aos.js"></script>
+    <script src="./js/contact.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+
+    <script type="text/javascript">
+        emailjs.init('tMVN8O-dfxJshKIMd')
+    </script>
+    <script src="./js/app.js"></script>
+
     <script src="js/vanilla-tilt.min.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll('.card'),{
