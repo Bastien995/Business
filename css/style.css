@@ -380,15 +380,20 @@ form {
   nav ul li ul li a:visited {
     display: block;
     padding: .5rem 1rem;
-    color: #ffffff;
+    color: #fa161e;
     text-decoration: none;
+    font-weight: bold;
   }
   nav ul li ul li a:hover,
   nav ul li ul li a:visited:hover {
-    background: rgb(15, 32, 109);
+    /* background: rgb(15, 32, 109); */
+    background-color: #fa161e;
+    font-weight: bold;
     color: #ffffff;
     border-radius: 50px;
   }
+
+ 
   nav ul li a:not(:only-child):after,
   nav ul li a:visited:not(:only-child):after {
     padding-left: 4px;
@@ -416,7 +421,7 @@ form {
     display: none;
     z-index: 1;
     border-radius: 10px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
   }
   .nav-dropdown-list {
     position: relative;
@@ -425,6 +430,16 @@ form {
     border-radius: 10px;
   }
   
+   /*--------------------------- Formations----------------------- */
+   .formation-item{
+    color: #0F206D !important;
+  }
+  .formation-item:hover{
+    color: white !important;
+    background-color: #0F206D !important;
+  }
+
+
   /* Mobile navigation */
   .nav-mobile {
     display: none;

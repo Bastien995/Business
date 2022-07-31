@@ -12,28 +12,82 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,400&display=swap');
     </style>
-    <section class="section-bg d-flex align-items-center" style="height: 100vh;">
-        <div class="container">
-            <div class="row d-flex justify-content-between align-items-center">
-                <div class="col-lg-4 section-text-color">
-                    <h1 class="fw-bold">Bienvenue sur Ecole 241 Business.</h1>
-                    <br>
-                    <img src="img/business-3d-ancient-greek-style-globe-1.png" alt="img-fluid">
+    <header style="height:100vh ;">
+        <div class="centrer">
+            <div class="container">
+                <div class="navigation align-items-center">
+                    <div class="nav-container glass3">
+                        <nav class="navbar d-flex align-items-center">
+                            <div class="nav-mobile "><a id="nav-toggle" href="#!"><span></span></a></div>
+                            <div class="brand">
+                                <a href="#!"><img src="img/20220728_083028.png" alt="" width="140px"></a>
+                            </div>
+                            <ul class="nav-list">
+                                <li>
+                                    <a href="index.html">Accueil</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Département</a>
+                                    <ul class="nav-dropdown">
+                                        <li>
+                                            <a   href="#!">Numérique</a>
+                                            <ul class="nav-dropdown-list">
+                                                <li>
+                                                    <a class="formation-item" href="Ingenieur_logiciel.html">Ingénieur Logiciel</a>
+                                                </li>
+                                                <li>
+                                                    <a class="formation-item" href="Ingenieur_Cloud.html">Ingénieur Cloud Google</a>
+                                                </li>
+                                                <li>
+                                                    <a class="formation-item" href="Ingenieur_FullStack.html">Développeur Full Stack</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a  href="E-commerce.html">E-commerce</a>
+                                        </li>
+                                        <li>
+                                            <a  href="Transport.html">Transport</a>
+                                        </li>
+                                        <li>
+                                            <a  href="Agritech.html">Agritech</a>
+                                        </li>
+                                        <li>
+                                            <a  href="Meta.html">Metaverse</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="A_propos.html">A propos</a>
+                                </li>
+                                <li id="contact">
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <h3 class="fw-bold section-text-color">Connectez-vous !</h3><br>
-                    <div class="container-form* d-flex justify-content-center">
-                        <form action="">
-                            <label for="nom">Email:</label><br>
-                            <input type="email" id="email" placeholder="Votre email" required style="width:300px ;"><br>
-                            <label for="password">Mot de passe</label><br>
-                            <input type="password" name="password" id="password" placeholder="Mot de passe" required style="width:300px ;"><br>
-                            <input type="submit" style="width: 200px;">
-                        </form>
+            <div class="container-fluid d-flex align-items-center" style="height: 70vh;color:white">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="header-h1-style" style="color: skyblue;">Souhaitez-vous travailler à l'International depuis le Gabon?</h1>
+                        <p class="header-p-style">Vous pouvez désormais vous construire et transformer vos vies en travaillant pour l’étranger tout en restant au Gabon. <br> C’est simple, il suffit de vous inscrire afin de vous former.
+                            </p>
+                        <a href="#formations" class="btn bouton" style="background-color:rgb(235, 62, 62)">Voir les formations</a>
+                    </div>
+                    <div class="col-lg-5">
+                        <div>
+                            <img src="img/earth.png" alt="" width="500px" class="globe-img">
+                        </div>
+                        <div>
+                            <img src="img/business-3d-man-lying-on-stomach-with-laptop.png" alt="" width="500px" class="globe-img2">
+                        </div> 
                     </div>
                 </div>
             </div>
+             
+            </div>
         </div>
-    </section>
+    </header>
 </body>
 </html>
