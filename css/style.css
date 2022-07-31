@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body{
+  box-sizing: border-box !important;
+  
+}
 .width90{
     width: 90%;
     background-color: rgba(255, 255, 255, 0.19);
@@ -39,8 +43,10 @@ ul li a{
 
 .section-bg{
     background-image: url("../img/hd-wallpaper-6988255_1920.jpg");
+    box-sizing: border-box !important;
     background-size: auto;
     background-attachment: fixed;
+   
 }
 .bouton{
     background-color: rgb(15, 32, 109);
@@ -166,6 +172,7 @@ ul li a{
 }
 .conteneur{
     width: 100%;
+    box-sizing: border-box !important;
 }
 .container-form{
     position: relative;
@@ -300,6 +307,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box !important;
   }
   .header-h1-style{
     font-weight: bold;
@@ -315,6 +323,7 @@ form {
     position: relative;
     top: 2rem;
     z-index: 1;
+    box-sizing: border-box !important;
   }
   
   .brand {
@@ -336,6 +345,7 @@ form {
   .nav-container {
     max-width: 1200px;
     margin: 0 auto;
+    box-sizing: border-box !important;
   }
   
   nav {
