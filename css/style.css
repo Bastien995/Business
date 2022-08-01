@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+html{
+  overflow-x: hidden;
+}
 body{
 box-sizing: border-box !important;
 
@@ -839,4 +842,8 @@ ul .nav-dropdown-list {
   color: white !important;
 }
 
+}
+
+html{
+  overflow-x: hidden;
 }
