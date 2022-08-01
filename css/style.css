@@ -43,7 +43,7 @@ ul li a{
     background-attachment: fixed;
 }
 .bouton{
-    background-color: rgb(15, 32, 109);
+    background-color:#fa161e;;
     border-radius: 50px;
     padding: .5rem 1rem;
     font-weight: bold;
@@ -91,7 +91,7 @@ ul li a{
 }
 .globe-img2{
     position: absolute;
-    right:270px;
+    right:230px;
     animation: rotate 3s infinite backwards alternate;
 }
 .glass{
@@ -156,7 +156,7 @@ ul li a{
   font-weight: bold;
 }
 .baniere{
-    background: linear-gradient(rgba(103, 152, 243, 0.434),rgba(255, 65, 65, 0.434));
+    background: linear-gradient(rgba(255, 65, 65, 0.434),rgba(103, 152, 243, 0.434));
     padding: 4rem 0;
     margin: 4rem 0;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
@@ -362,8 +362,8 @@ form {
   }
   nav ul li a:hover,
   nav ul li a:visited:hover {
-    background: rgb(15, 32, 109);
-    color: #ffffff;
+    background: skyblue;
+    color: black;
     border-radius: 50px;
   }
   nav ul li ul li a,
@@ -375,8 +375,8 @@ form {
   }
   nav ul li ul li a:hover,
   nav ul li ul li a:visited:hover {
-    background: rgb(15, 32, 109);
-    color: #ffffff;
+    background: skyblue;
+    color: black;
     border-radius: 50px;
   }
   nav ul li a:not(:only-child):after,
@@ -693,7 +693,7 @@ form {
   right: 35px;
   color: white;
   cursor: pointer;
-  background-color: #0F206D;
+  background-color: #0F206D !important;
   padding: 12px;
   border-radius: 50px;
   width: 40px;
@@ -740,4 +740,34 @@ form {
 
 #imgf {
   display: none;
+}
+
+.btn {
+  background-color: rgb(235, 62, 62) !important;
+}
+
+.btn:hover {
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(235, 62, 62) !important;
+}
+
+a {
+  border-radius: 40px;
+  transition: all 1s ease;
+
+}
+
+.bleu {
+  
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(235, 62, 62) !important;
+  padding: 6px;
+}
+
+.marge {
+  margin-top: 30px !important;
+  font-weight: 900;
+}
+#button{
+  background-color: #0F206D !important;
 }
