@@ -480,18 +480,6 @@ form {
   }
   @media screen and (max-width:1530px){
     .globe-img{
-      width: 400px;
-    }
-    .globe-img2{
-      width: 400px;
-      right:15rem;
-    }
-    .globe-img4{
-      width: 450px;
-  }
-  }
-  @media screen and (max-width:1330px){
-    .globe-img{
       width: 350px;
       bottom: 8rem;
     }
