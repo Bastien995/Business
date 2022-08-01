@@ -449,6 +449,7 @@ nav ul li ul li{
   height: 70px;
   width: 70px;
   z-index: 1;
+
 }
 
 @media only screen and (max-width: 798px) {
@@ -500,6 +501,7 @@ nav ul li ul li{
 @media screen and (min-width: 799px) {
   .nav-list {
     display: block !important;
+
   }
   
 }
