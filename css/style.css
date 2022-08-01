@@ -77,8 +77,8 @@ ul li a{
 }
 .globe-img8{
   position: absolute;
-  right: 11rem;
-  bottom: 5rem;
+  right: 15rem;
+  bottom: 15rem;
   animation: rotate 3s infinite backwards alternate;
 }
 @keyframes rotate{
