@@ -796,52 +796,54 @@ display: none;
 
 @media screen and (max-width:798px) {
   .nav-dropdown {
-    background-color: rgb(255, 255, 255) !important;
+    background-color: #0F206D !important;
 
 
   }
   .nav-list{
-    background-color: #fff;
+    background-color: #0F206D !important;
   }
   .nav-list li a{
-    color: #0F206D !important;
+    color: white;
     /* color: rgb(251, 22, 22); */
   }
-  .nav-dropdown-list{
-    background-color: #fff;
-  }
+ 
+
+
 
   nav ul li a {
     font-weight: bold;
-    color: #0F206D;
+    color: white;
     border-radius: 50px;
   }
   nav ul li ul li a {
     display: block;
     padding: .5rem 1rem;
-    color: #fa161e;
+    color: white !important;
     text-decoration: none;
     font-weight: bold;
   }
+
   nav ul li ul li a {
     /* background: rgb(15, 32, 109); */
-    color: #ffffff;
+    color: white !important;
     border-radius: 50px;
   }
 
 
-
+/* -----------------Menu principal--------------------- */
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: #0F206D;
+  background: #fa161e;
   color: #ffffff !important;
   border-radius: 50px;
 }
-nav ul li ul li a,
-nav ul li ul li a:visited {
+
+/*----------------------- Les départements----------------------- */
+nav ul li ul li a {
   display: block;
   padding: .5rem 1rem;
-  color: #fa161e;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
@@ -849,9 +851,19 @@ nav ul li ul li a:hover,
 nav ul li ul li a:visited:hover {
   /* background: rgb(15, 32, 109); */
   background-color: #fa161e;
-  
-  color: #ffffff;
+  color: green;
   border-radius: 50px;
+}
+
+.nav-dropdown-list li a{
+
+  color: white !important;
+}
+
+/* Background du département numérique */
+ul .nav-dropdown-list {
+  background-color: #0F206D;
+  color: white !important;
 }
 
 }
