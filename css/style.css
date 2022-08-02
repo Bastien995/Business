@@ -78,20 +78,20 @@ animation: rotate2 3s infinite backwards alternate;
 }
 .globe-img7{
 position: absolute;
-top: 12rem;
+top: 15rem;
 right: 8rem;
 animation: rotate2 3s infinite backwards alternate;
 }
 .globe-img8{
 position: absolute;
 right: 11rem;
-bottom: 5rem;
-animation: rotate2 3s infinite backwards alternate;
+bottom: 18rem;
+animation: rotate2 2s infinite ease-in-out alternate;
 }
 .globe-img9{
   position: absolute;
   right: 11rem;
-  bottom: 18rem;
+  bottom: 1rem;
   animation: rotate2 3s infinite backwards alternate; 
 }
 @keyframes rotate{
@@ -99,7 +99,7 @@ animation: rotate2 3s infinite backwards alternate;
       transform: translateY(-50px);
   }
   100%{
-      transform: translateY(50px);
+      transform: translateY(0px);
   }
 }
 @keyframes rotate2{
@@ -107,7 +107,7 @@ animation: rotate2 3s infinite backwards alternate;
       transform: translateY(0px);
   }
   100%{
-      transform: translateY(100px);
+      transform: translateY(50px);
   }
 }
 .globe-img2{
@@ -531,13 +531,12 @@ nav ul li ul li{
 }
 .globe-img9{
   width: 300px;
-  bottom: 16rem;
-  right: 9.5rem;
+  bottom: 15rem;
 }
 }
 @media screen and (max-width:1330px){
   .globe-img{
-    width: 350px;
+    width: 360px;
     bottom: 10rem;
   }
   .globe-img2{
@@ -549,7 +548,7 @@ nav ul li ul li{
     width: 350px;
   }
   .globe-img8{
-    width: 200px;
+    width: 250px;
   }
   .globe-img6{
     width: 350px;
@@ -560,7 +559,7 @@ nav ul li ul li{
   }
   .globe-img9{
     width: 250px;
-    bottom: 22rem;
+    bottom: 18rem;
   }
 
 }
@@ -711,7 +710,7 @@ nav ul li ul li{
 .over {
 width: 100%;
 height: 100vh !important;
-background-color: rgba(0, 0, 0, 0.922);
+background-color: rgba(0, 0, 0, 0.515);
 backdrop-filter: blur(4px);
 position: fixed;
 top: 0;
@@ -766,7 +765,7 @@ border-top-right-radius: 6px;
 @media screen and (max-width:500px) {
 .over {
     height: 100vh !important;
-    background-color: rgb(0, 0, 0) !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
     backdrop-filter: blur(4px);
     position: fixed;
     top: 0;
@@ -796,54 +795,52 @@ display: none;
 
 @media screen and (max-width:798px) {
   .nav-dropdown {
-    background-color: #0F206D !important;
+    background-color: rgb(255, 255, 255) !important;
 
 
   }
   .nav-list{
-    background-color: #0F206D !important;
+    background-color: #fff;
   }
   .nav-list li a{
-    color: white;
+    color: #0F206D !important;
     /* color: rgb(251, 22, 22); */
   }
- 
-
-
+  .nav-dropdown-list{
+    background-color: #fff;
+  }
 
   nav ul li a {
     font-weight: bold;
-    color: white;
+    color: #0F206D;
     border-radius: 50px;
   }
   nav ul li ul li a {
     display: block;
     padding: .5rem 1rem;
-    color: white !important;
+    color: #fa161e;
     text-decoration: none;
     font-weight: bold;
   }
-
   nav ul li ul li a {
     /* background: rgb(15, 32, 109); */
-    color: white !important;
+    color: #ffffff;
     border-radius: 50px;
   }
 
 
-/* -----------------Menu principal--------------------- */
+
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: #fa161e;
+  background: #0F206D;
   color: #ffffff !important;
   border-radius: 50px;
 }
-
-/*----------------------- Les départements----------------------- */
-nav ul li ul li a {
+nav ul li ul li a,
+nav ul li ul li a:visited {
   display: block;
   padding: .5rem 1rem;
-  color: white;
+  color: #fa161e;
   text-decoration: none;
   font-weight: bold;
 }
@@ -851,19 +848,9 @@ nav ul li ul li a:hover,
 nav ul li ul li a:visited:hover {
   /* background: rgb(15, 32, 109); */
   background-color: #fa161e;
-  color: green;
+  
+  color: #ffffff;
   border-radius: 50px;
-}
-
-.nav-dropdown-list li a{
-
-  color: white !important;
-}
-
-/* Background du département numérique */
-ul .nav-dropdown-list {
-  background-color: #0F206D;
-  color: white !important;
 }
 
 }
