@@ -8,6 +8,9 @@ body{
 box-sizing: border-box !important;
 
 }
+html{
+  overflow-x: hidden;
+}
 .width90{
   width: 90%;
   background-color: rgba(255, 255, 255, 0.19);
@@ -90,9 +93,9 @@ animation: rotate2 2s infinite ease-in-out alternate;
 }
 .globe-img9{
   position: absolute;
-  right: 11rem;
-  bottom: 1rem;
-  animation: rotate2 3s infinite backwards alternate; 
+  right: 8rem;
+  bottom: 15rem;
+  animation: rotate2 2s infinite ease-in-out alternate; 
 }
 @keyframes rotate{
   0%{
