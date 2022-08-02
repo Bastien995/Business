@@ -78,9 +78,9 @@ animation: rotate2 3s infinite backwards alternate;
 }
 .globe-img7{
 position: absolute;
-top: 15rem;
-right: 8rem;
-animation: rotate2 3s infinite backwards alternate;
+top: 12rem;
+right: 6rem;
+animation: rotate2 2s infinite ease-in-out alternate;
 }
 .globe-img8{
 position: absolute;
@@ -113,7 +113,7 @@ animation: rotate2 2s infinite ease-in-out alternate;
 .globe-img2{
   position: absolute;
   right:13rem;
-  animation: rotate2 3s infinite backwards alternate;
+  animation: rotate2 2s infinite ease-in-out alternate;
 }
 .glass{
 background: linear-gradient(rgba(255, 255, 255, 0.322),rgba(47, 133, 225, 0.533));
@@ -554,7 +554,7 @@ nav ul li ul li{
     width: 350px;
   }
   .globe-img7{
-    width:230px;
+    width:250px;
     right: 6rem;
   }
   .globe-img9{
